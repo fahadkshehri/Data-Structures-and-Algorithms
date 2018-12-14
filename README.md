@@ -16,9 +16,7 @@ Data Structures:
 7. Graphs 
 8. Heaps 
 
-Data Structures               
-Linked Lists 
-T
+
 
 
 Algorithms: 
