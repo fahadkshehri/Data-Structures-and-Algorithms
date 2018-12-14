@@ -10,11 +10,15 @@ Data Structures:
 1. Queues 
 2. Stacks
 3. LinkedLists
-4. Hashmaps
+4. Hashmaps/Hash-Tables/sets
 5. Binary Trees
 6. Binary Search Trees
 7. Graphs 
 8. Heaps 
+
+Data Structures               
+Linked Lists 
+T
 
 
 Algorithms: 
