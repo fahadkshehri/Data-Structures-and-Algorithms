@@ -19,13 +19,16 @@ public static void main(String[] args){
     }
 
 
-    public static String findMostCommonWords(String paragraph, ArrayList<String> wordToExclude){
+        public static String findMostCommonWords(String paragraph, ArrayList<String> wordToExclude){
 
         String lower = paragraph.toLowerCase();
         String[] words = lower.split(" ");
 
         // populating the map while ignoring the banned words
         HashMap<String, Integer> map = new HashMap<>();
+        int max = 0;
+        String maxWordFound = "";
+
         for (String word: words) {
             if(word.trim().length() == 0 ){
                 continue;
@@ -34,14 +37,14 @@ public static void main(String[] args){
             if(map.containsKey(word) == false){
                 map.put(word, 1);
             }else{
+
                 map.put(word, map.get(word) +1);
+                if(map.get(word) > max){
+                    max = map.get(word);
+                    maxWordFound = word;
+                }
             }
         }
-        //finding the max word
-        String maxWord = null;
-        for(String word : map.keySet())
-            if(maxWord == null || map.get(word) > map.get(maxWord))
-                maxWord = word;
-        return maxWord;
-
+        
+        return maxWordFound;
     }
