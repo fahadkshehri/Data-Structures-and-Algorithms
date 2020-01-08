@@ -10,6 +10,11 @@ public class Solution {
             rev[j] = a[i]; 
             j++;
         }
+        
+        for(int i =0; i <a.length; i++){
+            System.out.println(rev[i]);
+            System.out.println(" ");
+        }
 
         return rev;
 
